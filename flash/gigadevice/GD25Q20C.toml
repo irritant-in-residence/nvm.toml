@@ -1,0 +1,9 @@
+# Settings for the Gigadevice GD25Q20C 256KiB SPI flash.
+# Datasheet: Verify via http://www.gigadevice.com/datasheet/gd25q20c/
+total_size = 0x40000  # 256 KiB (2M-bit)
+capacity = 0x12       # Adjusted for 2M-bit size (check datasheet for confirmation)
+write_status_register_split = false
+01_continuous_status_write = true
+e7_quad_word_read = true
+start_up_time_us = 5000  # Typical; confirm via datasheet if lower/higher needed
+max_clock_speed_mhz = 104  # Confirm compatibility; high-performance mode may allow 120
